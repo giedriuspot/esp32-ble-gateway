@@ -32,7 +32,7 @@ Open the cloned repo in VSCode and PlatformIO should automatically install all t
 
 > At the moment, the project is only configured to work on **ESP32-WROVER boards**. If you have a different board, you need to edit the `platformio.ini` file and create your own env configuration. As of this writing the code takes about 1.5Mb so I'm using the `min_spiffs.csv` partition scheme in order to be able to hopefully do OTA in the future.
 
-Connect your ESP32 to the PC, go to PlatformIO menu (the alien head on the VSCode's left toolbar, where you have files, search, plugins etc.) then in **Project Tasks** choose **env:esp-wrover** -> **Platform** -> **Upload Filesystem Imager**. This will 'format' the storage and upload the web UI.  
+Connect your ESP32 to the PC, go to PlatformIO menu (the alien head on the VSCode's left toolbar, where you have files, search, plugins etc.) then in **Project Tasks** choose **env:esp-wrover** -> **Platform** -> **Upload Filesystem Image**. This will 'format' the storage and upload the web UI.  
 
 Next, you need to build and upload the main code. In **Project Tasks** choose **env:esp-wrover** -> **General** -> **Upload and Monitor**. This should start the build process and once it is finished the compiled result will be uploaded to the ESP32.
 
